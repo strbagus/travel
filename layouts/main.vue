@@ -26,11 +26,11 @@
             <div class="px-2 mt-3 md:mt-5 mb-5">
               <input type="email" class="rounded py-2 px-4 bg-transparent border" placeholder="example@email.com">
             </div>
-            <button class="rounded uppercase px-3 py-2 bg-cyan-500 hover:bg-cyan-600">Subscribe</button>
+            <button class="rounded uppercase px-3 py-2 bg-cyan-500 hover:bg-cyan-600 text-sm">Subscribe</button>
           </div>
         </div>
       </div>
-      <div class="text-center md:text-base text-sm pt-4 pb-2 mt-10 border-t border-neutral-300">Copyright&copy; 2023. Travel, Yogyakarta, Indonesia. All Right Reserved</div>
+      <div class="text-center md:text-base text-sm pt-4 pb-2 mt-10 border-t border-neutral-300">Copyright&copy; 2023. All Right Reserved</div>
     </div>
   </footer>
 </template>
