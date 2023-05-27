@@ -1,0 +1,45 @@
+<header class="bg-white fixed top-0 w-full shadow-lg z-40">
+  <nav class="max-w-[1080px] mx-auto md:flex justify-between align-center">
+    <div class="flex w-full md:w-auto align-center justify-between px-2 md:px-0 py-5">
+      <a href="/">
+        <span class="text-3xl text-primary font-medium px-2">EASTVARA</span>
+      </a>
+      <div class="toggle block md:hidden cursor-pointer text-black">
+        <svg width="32" height="32" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5"/></svg>
+      </div>
+    </div>
+    <ul class="hidden md:flex items-center menu flex-col md:flex-row text-sm">
+      <li class="mx-4 text-black hover:text-primary duration-200 mt-4 mb-2 md:my-0"><a href="/">HOME</a></li>
+      <li class="mx-4 text-black hover:text-primary duration-200 mt-4 mb-2 md:my-0"><a href="/directory">DIRECTORY</a></li>
+      <li class="mx-4 hover:text-primary duration-200 my-2 md:my-0"><a href="/gallery">GALLERY</a></li>
+      <li class="mx-4 hover:text-primary duration-200 my-2 md:my-0"><a href="/articles">WHAT'S ON</a></li>
+      <li class="mx-4 hover:text-primary duration-200 my-2 md:my-0"><a href="/about">ABOUT</a></li>
+      <li class="mx-4 hover:text-primary duration-200 mt-3 mb-4 md:my-0"><a href="/contact">CONTACT</a></li>
+      <li class="ml-5 hover:text-primary duration-200 mr-2 hidden md:block">
+        <svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="m18.9 20.3l-5.6-5.6q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5q0-2.725 1.888-4.612T9.5 3q2.725 0 4.612 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l5.625 5.625q.275.275.275.675t-.3.7q-.275.275-.7.275t-.7-.275ZM9.5 14q1.875 0 3.188-1.313T14 9.5q0-1.875-1.313-3.188T9.5 5Q7.625 5 6.312 6.313T5 9.5q0 1.875 1.313 3.188T9.5 14Z"/></svg>
+      </li>
+    </ul>
+  </nav>
+</header>
+<div class="nav-blocker hidden fixed z-30 top-0 h-screen w-full bg-black opacity-80"></div>
+<script>
+const menu = document.querySelector('.menu');
+const blocker = document.querySelector('.nav-blocker');
+
+document.querySelector('.toggle').addEventListener('click', () => { activateMenu(); });
+document.querySelector('.nav-blocker').addEventListener('click', () => { activateMenu(); });
+
+function activateMenu(){
+  menu.classList.toggle('active');
+  blocker.classList.toggle('active');
+
+}
+</script>
+<style>
+  .menu.active {
+    display: flex;
+  }
+  .nav-blocker.active {
+    display: block;
+  }
+</style>
