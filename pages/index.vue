@@ -61,12 +61,25 @@ interface reviewsItem {
     </div>
     <div class="absolute bottom-0 w-full flex justify-center">
       <div class="pb-10 text-neutral-200 bouncing"> 
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="M6 17.59L7.41 19L12 14.42L16.59 19L18 17.59l-6-6z"/><path fill="currentColor" d="m6 11l1.41 1.41L12 7.83l4.59 4.58L18 11l-6-6z"/></svg>
+        <Icon name="doubleTop" size="48"/>
       </div>
     </div>
   </header>
   <NavBar />
-  <div class="min-h-screen bg-neutral-100">
+  <div class="min-h-screen bg-cyan-50">
+    <div class="max-w-[1000px] mx-auto px-3">
+      <h2>What we Provided</h2>
+      <div class="flex flex-wrap">
+        <div class="w-full md:w-1/2 bg-red-500">
+        </div>
+        <div class="w-full md:w-1/2 flex col-row p-3">
+          <div class="w-full bg-neutral-50 px-5 py-3 rounded-xl shadow">
+            <div>1. Rental</div>
+            <a href="/rental"></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="bg-gradient-to-r from-cyan-500 to-cyan-600 py-24">
     <div class="max-w-[1000px] mx-auto">
@@ -88,11 +101,11 @@ interface reviewsItem {
                   <div class="text-xl text-white font-semibold ml-5">{{ review.name }}</div>
                 </div>
                 <div class="flex items-center text-yellow-500">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z"/></svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z"/></svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z"/></svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z"/></svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z"/></svg>
+                  <Icon name="star" size="32"/>
+                  <Icon name="star" size="32"/>
+                  <Icon name="star" size="32"/>
+                  <Icon name="star" size="32"/>
+                  <Icon name="star" size="32"/>
                 </div>
               </div>
               <p class="my-3 text-sm text-white">{{ review.note }}</p>

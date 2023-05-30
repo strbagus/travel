@@ -14,16 +14,16 @@ const navClick = (() => {
   <nav class="sticky z-40 top-0 bg-neutral-900 py-4">
     <div class="max-w-[1000px] mx-auto flex justify-between items-center flex-col md:flex-row">
       <div class="w-full flex justify-between items-center px-4 md:px-0">
-        <a href="/" class="text-white text-xl font-medium italic">Travel Jogja</a>
+        <NuxtLink to="/" class="text-white text-xl font-medium italic">Travel Jogja</NuxtLink>
         <div class="text-white cursor-pointer block md:hidden" @click="navClick">
-          <svg width="32" height="32" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5"/></svg>
+          <Icon name="hamburger" size="32"/>
         </div>
       </div>
       <div class="w-full md:w-auto text-center mt-3 md:mt-0" v-if="navToggle">
         <ul class="text-white flex flex-col md:flex-row border-t md:border-none">
-          <li class="px-4 hover:text-neutral-200 mt-5 mb-1 md:mt-1"><a href="/">Home</a></li>
-          <li class="px-4 hover:text-neutral-200 my-1"><a href="/rental">Rental</a></li>
-          <li class="px-4 hover:text-neutral-200 mt-1 mb-5 md:mb-1"><a href="/tour">Tour</a></li>
+          <li class="px-4 hover:text-neutral-200 mt-5 mb-1 md:mt-1"><NuxtLink to="/">Home</NuxtLink></li>
+          <li class="px-4 hover:text-neutral-200 my-1"><NuxtLink to="/rental">Rental</NuxtLink></li>
+          <li class="px-4 hover:text-neutral-200 mt-1 mb-5 md:mb-1"><NuxtLink to="/tour">Tour</NuxtLink></li>
         </ul>
       </div>
     </div>
