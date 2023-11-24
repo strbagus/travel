@@ -1,5 +1,7 @@
 <template>
-  <slot/>
+  <div class="bg-violet-100">
+    <slot />
+  </div>
   <footer class="w-full bg-neutral-800 text-white pt-12 pb-3">
     <div class="px-5 max-w-[1200px] mx-auto">
       <div class="flex text-white flex-wrap">
@@ -7,16 +9,16 @@
           <div class="text-3xl md:text-4xl font-medium italic text-center md:text-left">Travel45</div>
           <div class="flex mt-2 md:mt-5 justify-center md:justify-start">
             <a href="https://twitter.com" target="blank" class="hover:text-cyan-400 mx-3" title="Twitter">
-              <Icon name="twitter" size="32"/>
+              <Icon name="twitter" :size="24" />
             </a>
             <a href="https://instagram.com" target="blank" class="hover:text-pink-500 mx-3" title="Instagram">
-              <Icon name="instagram" size="32"/>
+              <Icon name="instagram" :size="24" />
             </a>
             <a href="https://facebook.com" target="blank" class="hover:text-blue-400 mx-3" title="Facebook">
-              <Icon name="facebook" size="32"/>
+              <Icon name="facebook" :size="24" />
             </a>
             <a href="https://whatsapp.com" target="blank" class="hover:text-green-400 mx-3" title="Whatsapp">
-              <Icon name="whatsapp" size="32"/>
+              <Icon name="whatsapp" :size="24" />
             </a>
           </div>
         </div>
@@ -30,7 +32,8 @@
           </div>
         </div>
       </div>
-      <div class="text-center md:text-base text-sm pt-4 pb-2 mt-10 border-t border-neutral-300">Copyright&copy; 2023. All Right Reserved</div>
+      <div class="text-center md:text-base text-sm pt-4 pb-2 mt-10 border-t border-neutral-300">Copyright&copy; 2023. All
+        Right Reserved</div>
     </div>
   </footer>
 </template>
