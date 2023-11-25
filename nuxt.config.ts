@@ -2,5 +2,12 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
-  ]
+  ],
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'en'
+      }
+    }
+  }
 })
