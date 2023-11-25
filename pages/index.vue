@@ -7,6 +7,25 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
 
+useHead({
+  title: 'Travel Jogja',
+  meta: [
+    { name: 'title', content: 'Travel Jogja Portfolio Strbagus.' },
+    { name: 'description', content: 'Plan the Perfect Trip on Yogyakarta with wonderfull tour package with many Great Destination!' },
+    { name: 'keywords', content: 'Portofolio Satrio Bagus, Strbagus, Travel Jogja' },
+    { name: 'author', content: 'strbagus' },
+    { name: 'tag', content: 'Portoflio Website' },
+    { name: 'og:title', content: 'Travel Jogja Portfolio Strbagus.' },
+    { name: 'og:image', content: 'https://travel.strbagus.com/assets/dummy-md.jpg' },
+    { name: 'og:description', content: 'Plan the Perfect Trip on Yogyakarta with wonderfull tour package with many Great Destination!' },
+    { name: 'og:url', content: 'https://travel.strbagus.com' },
+    { name: 'twitter:title', content: 'Travel Jogja Portfolio Strbagus.' },
+    { name: 'twitter:image', content: 'https://travel.strbagus.com/assets/dummy-md.jpg' },
+    { name: 'twitter:description', content: 'Hello, im Satrio Bagus. And this is my Peronal Website!' },
+    { name: 'twitter:url', content: 'https://travel.strbagus.com' },
+  ],
+})
+
 defineComponent({
   Swiper,
   SwiperSlide,

@@ -1,5 +1,12 @@
 <script setup lang="ts">
 const route = useRoute()
+useHead({
+  title: `${ route.params.destination } - Travel Jogja`,
+  meta: [
+    { name: 'title', content: 'List Destinations - Travel Jogja Portfolio Strbagus.' },
+    { name: 'description', content: 'Plan the Perfect Trip on Yogyakarta with wonderfull tour package with many Great Destination!' },
+  ],
+})
 </script>
 <template>
   <NuxtLayout name="main">

@@ -1,3 +1,12 @@
+<script setup lang="ts">
+useHead({
+  title: 'Tours - Travel Jogja',
+  meta: [
+    { name: 'title', content: 'List Tours - Travel Jogja Portfolio Strbagus.' },
+    { name: 'description', content: 'Plan the Perfect Trip on Yogyakarta with wonderfull tour package with many Great Destination!' },
+  ],
+})
+</script>
 <template>
   <NuxtLayout name="main">
     <NavBar name="tour" />
