@@ -22,8 +22,8 @@ const route = useRoute()
               <NuxtLink 
                 v-for="i in 5"
                 :to="`/destination/destination-name-${i}`"
-                class="w-full md:w-1/2 px-2">
-                <div class="flex group border-b border-neutral-300 py-2 hover:border-purple-400">
+                class="w-full md:w-1/2 pr-2">
+                <div class="flex group border-l-8 border-neutral-300 py-1 my-2 pl-2 hover:border-purple-300">
                   <div class="w-1/4 bg-neutral-300">
                     <Image src="/assets/dummy-xs.jpg" class="aspect-[3/2]" />
                   </div>

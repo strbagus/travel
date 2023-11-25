@@ -6,7 +6,7 @@
     <div class="px-5 max-w-[1200px] mx-auto">
       <div class="flex text-white flex-wrap">
         <div class="w-full md:w-1/2 order-2 md:order-1">
-          <div class="text-3xl md:text-4xl font-medium italic text-center md:text-left">Travel45</div>
+          <div class="text-3xl md:text-4xl font-medium italic text-center md:text-left">Travel Jogja</div>
           <div class="flex mt-2 md:mt-5 justify-center md:justify-start">
             <a href="https://twitter.com" target="blank" class="hover:text-cyan-400 mx-3" title="Twitter">
               <Icon name="twitter" :size="24" />
@@ -28,7 +28,7 @@
             <div class="px-2 mt-3 md:mt-5 mb-5">
               <input type="email" class="rounded py-2 px-4 bg-transparent border" placeholder="example@email.com">
             </div>
-            <button class="rounded uppercase px-3 py-2 bg-cyan-500 hover:bg-cyan-600 text-sm">Subscribe</button>
+            <button class="rounded uppercase px-3 py-2 bg-purple-600 hover:bg-purple-500 text-sm">Subscribe</button>
           </div>
         </div>
       </div>
