@@ -21,7 +21,7 @@ useHead({
     { name: 'og:url', content: 'https://travel.strbagus.com' },
     { name: 'twitter:title', content: 'Travel Jogja Portfolio Strbagus.' },
     { name: 'twitter:image', content: 'https://travel.strbagus.com/assets/dummy-md.jpg' },
-    { name: 'twitter:description', content: 'Hello, im Satrio Bagus. And this is my Peronal Website!' },
+    { name: 'twitter:description', content: 'Plan the Perfect Trip on Yogyakarta with wonderfull tour package with many Great Destination!' },
     { name: 'twitter:url', content: 'https://travel.strbagus.com' },
   ],
 })
@@ -115,11 +115,11 @@ interface reviewsItem {
         </swiper-slide>
       </swiper>
     </div>
-    <div class="py-12">
+    <div class="py-12 px-3 md:px-0">
       <h2 class="text-center text-purple-700 text-3xl font-medium mb-3">Featured Tour Package</h2>
       <div class="flex flex-wrap max-w-[800px] mx-auto bg-purple-200 rounded-r-lg">
-        <div class="w-1/2">
-          <Image src="/assets/dummy-md.jpg" loading="lazy" class="aspect-[1/1]" />
+        <div class="w-full md:w-1/2">
+          <Image src="/assets/dummy-md.jpg" loading="lazy" class="aspect-[3/2] md:aspect-[1/1]" />
         </div>
         <div class="w-full md:w-1/2 px-5 flex flex-col justify-center my-2">
           <h2 class="text-2xl text-purple-700 font-medium group-hover:text-purple-800">Tour Package Name</h2>

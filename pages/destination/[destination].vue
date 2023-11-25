@@ -23,7 +23,7 @@ useHead({
             Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
           </p>
           <ul class="flex flex-wrap text-neutral-600 my-4">
-            <li v-for="i in 5" class="bg-purple-300 py-1 px-2 text-sm mx-1 rounded">#&nbsp; Tag{{ i }}</li>
+            <li v-for="i in 5" class="bg-purple-300 py-1 px-2 text-sm mx-1 my-1 rounded">#&nbsp; Tag{{ i }}</li>
           </ul>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63245.97085556032!2d110.33364492822413!3d-7.803248457439516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5787bd5b6bc5%3A0x21723fd4d3684f71!2sYogyakarta%2C%20Yogyakarta%20City%2C%20Special%20Region%20of%20Yogyakarta!5e0!3m2!1sen!2sid!4v1700858947294!5m2!1sen!2sid" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full aspect-[5/2]"></iframe>
         </div>
