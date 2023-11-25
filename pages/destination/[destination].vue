@@ -8,7 +8,7 @@ const route = useRoute()
       <div class="flex flex-wrap">
         <div class="w-full md:w-2/3 px-3">
           <div class="aspect-[3/2] bg-neutral-300 w-full relative">
-            <img src="/assets/banner.webp" class="absolute h-full w-full object-cover left-0 right-0">
+            <img src="/assets/dummy-md.jpg" class="absolute h-full w-full object-cover left-0 right-0">
           </div>
           <h1 class="text-3xl font-medium mt-2 text-neutral-800">{{ route.params.destination}}</h1>
           <Rating :rating="4" />
@@ -26,16 +26,13 @@ const route = useRoute()
             <div class="flex flex-col">
               <template v-for="i in 6">
                 <NuxtLink :to="`/destination/destination-name-${i}`">
-                  <div class="flex py-2 group cursor-pointer border-b-2 border-neutral-300 items-center">
+                  <div class="flex py-2 group border-b-2 border-neutral-300 hover:border-purple-300 items-center">
                     <div class="w-1/3">
-                      <div class="aspect-[3/2] bg-neutral-300 relative">
-                        <img src="/assets/banner.webp" class="absolute h-full w-full object-cover left-0 top-0 rounded">
-                        <div class="h-0 opacity-0 group-hover:h-full group-hover:opacity-10 bg-black"></div>
-                      </div>
+                      <Image src="/assets/dummy-xs.jpg" class="aspect-[3/2]" />
                     </div>
                     <div class="w-2/3 px-2 flex flex-col justify-between">
                       <h3 class="text-xl font-medium text-purple-600 group-hover:text-purple-700">Destination Name {{ i }}</h3>
-                      <Rating :rating="4" />
+                      <Rating :rating="4" class="group-hover:text-amber-400" />
                     </div>
                   </div>
                 </NuxtLink>
