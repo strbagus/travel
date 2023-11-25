@@ -66,7 +66,7 @@ interface reviewsItem {
 <template>
   <NuxtLayout name="main">
     <header class="h-screen bg-neutral-200 relative w-full flex items-center">
-      <img src="assets/banner.webp" class="absolute h-full w-full top-0 left-0 object-cover">
+      <img src="/assets/banner.webp" class="absolute h-full w-full top-0 left-0 object-cover">
       <div class="absolute h-full w-full bg-black opacity-40" />
       <div class="relative w-full max-w-[1200px] mx-auto px-5">
         <div class="w-full md:w-1/2">
