@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, defineProps } from 'vue'
+import { ref, onMounted } from 'vue'
 onMounted(() => {
     if(window.screen.width >=480){
       navToggle.value = true
@@ -23,7 +23,7 @@ console.log(props.name)
           <Icon name="hamburger" :size="32"/>
         </div>
       </div>
-      <div class="w-full md:w-auto text-center mt-3 md:mt-0" v-if="navToggle">
+      <div class="w-full md:w-auto text-center mt-3 md:mt-0 duration-500" v-if="navToggle">
         <ul class="text-white flex flex-col md:flex-row border-t md:border-none px-12 md:px-0">
           <li :class="props.name==='home' ? 'border-b border-purple-500' : ''" class="px-4 hover:text-neutral-200 mt-5 mb-1 md:mt-1"><NuxtLink to="/">Home</NuxtLink></li>
           <li :class="props.name==='tour' ? 'border-b border-purple-500' : ''" class="px-4 hover:text-neutral-200 my-1"><NuxtLink to="/tour">Tour</NuxtLink></li>
